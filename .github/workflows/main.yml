@@ -5,10 +5,6 @@ on:
     branches:
       - main
       - '*'  # This will trigger the workflow for any branch
-  pull_request:
-    branches:
-      - main
-      - '*'  # This will trigger the workflow for any pull request targeting any branch
 
 jobs:
   test:
@@ -30,4 +26,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest  test_main.py # Runs the tests using pytest
+        pytest test_main.py # Runs the tests using pytest
